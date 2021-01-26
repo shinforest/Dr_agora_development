@@ -1,4 +1,4 @@
-# Try Out Development Containers: Python
+# Dr.agora開発環境構築用Dockerfile
 
 This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
 
