@@ -14,6 +14,7 @@ RUN if ! cat /etc/group | grep -e "^pip-global:" > /dev/null 2>&1; then groupadd
 
 # ここから追加
 RUN pip install django
+RUN pip install mysql-connector-python
 
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/
@@ -22,5 +23,8 @@ RUN pip install django
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update \
+#     && apt install -y python3-dev libpq-dev postgresql postgresql-contrib
+
+# azure-cliの導入と
 #     && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
